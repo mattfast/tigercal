@@ -1,2 +1,2 @@
-release: python manage.py migrate tiger-cal
+release: python manage.py makemigrations && python manage.py migrate
 web: gunicorn mysite.wsgi
