@@ -21,6 +21,3 @@ class Event(models.Model):
 	start_time = models.DateTimeField()
 	end_time = models.DateTimeField()
 	descrip = models.TextField()
-
-class Tester(models.Model):
-	asdf = models.TextField()
