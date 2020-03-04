@@ -15,6 +15,9 @@ def events(request, group_id):
 	context = {'events': events}
 	return render(request, 'events.html', context)
 
+def groups(request):
+	return render(request, 'groups.html')
+
 def groupform(request):
 	return render(request, 'groupform.html')
 
