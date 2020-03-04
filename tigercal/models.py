@@ -18,6 +18,7 @@ class Leadership(models.Model):
 class Event(models.Model):
 	group = models.ForeignKey(Group, on_delete=models.CASCADE)
 	name = models.CharField(max_length=200)
+	is_public = models.BooleanField()
 	start_time = models.DateTimeField()
 	end_time = models.DateTimeField()
 	descrip = models.TextField()
